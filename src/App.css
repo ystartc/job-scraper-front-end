@@ -1,4 +1,5 @@
 .App {
+  display: grid;
   grid-template-rows: minmax(min-content, 0.5fr) minmax(min-content, 4fr) minmax(
       min-content,
       0.5fr
@@ -22,6 +23,10 @@
 .App-main {
   grid-row: 2;
   gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-footer {
