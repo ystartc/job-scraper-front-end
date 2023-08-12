@@ -1,15 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import SearchForm from './components/SearchForm';
 
-function App() {
+const App = () => {
   return (
     <section className="App">
       <header className="App-header">
-        <p>Header</p>
+        <Header/>
       </header>
       <main className='App-main'>
-        <p>Main Body</p>
+        <p>What are you looking for?</p>
+        <SearchForm/>
       </main>
       <footer className='App-footer'>
         <p>Footer</p>
