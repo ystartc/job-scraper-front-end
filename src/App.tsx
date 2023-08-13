@@ -1,7 +1,16 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
-import SearchForm from './components/SearchForm';
+import {
+  Routes, 
+  Route,
+  // Link,
+  Navigate
+} from 'react-router-dom';
+
+// pages:
+import SearchPage from './pages/search';
+import MainPage from './pages/main';
 
 const App = () => {
   return (
@@ -10,8 +19,11 @@ const App = () => {
         <Header/>
       </header>
       <main className='App-main'>
-        <p>What are you looking for?</p>
-        <SearchForm/>
+        <Routes>
+          <Route path='/' element={<MainPage/>}/>
+          <Route path='/search' element={<SearchPage/>}/>
+          <Route path='/' element={<Navigate to='/search' replace/>} />
+        </Routes>
       </main>
       <footer className='App-footer'>
         <p>Footer</p>
