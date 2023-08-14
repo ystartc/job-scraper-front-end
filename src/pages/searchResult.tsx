@@ -2,38 +2,29 @@ import React, { useState, useEffect } from 'react';
 import SearchResult from '../components/SearchResult';
 import '../components/styles/SearchResult.css'
 import * as api from '../api/apiRequests';
+import { IJob } from '../interfaces/job';
 
-interface IJob {
-  id: number
-  jobId: string
-  dataId: number
-  title: string
-  location: string
-  company: string
-  salary?: string | undefined
-  about: string
-  fetched: string
-};
 
-interface IJobListProps {
-  jobs: IJob[];
-};
+
+// interface IJobListProps {
+//   jobs: IJob[];
+// };
 
 const SearchResultPage: React.FC = () => {
-  const [jobData, setJobData] = useState<IJobListProps>({jobs: []});
+  const [jobData, setJobData] = useState<IJob[]>([]);
 
   const loadJobsRequest = () => {
     api.loadJobs()
-    .then(jobs => {
+    .then((jobs: IJob[]) => {
       setJobData(jobs);
     })
-    .catch(error => {
+    .catch((error: any) => {
       console.log('Re-attempting due to an error', error);
       api.loadJobs()
-      .then(jobs => {
+      .then((jobs: IJob[])=> {
         setJobData(jobs);
       })
-      .catch(error => {
+      .catch((error: any) => {
         console.log('error', error);
       });
     })
