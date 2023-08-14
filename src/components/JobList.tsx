@@ -17,10 +17,10 @@ interface IJobListProps {
   jobs: IJob[];
 };
 
-const JobList: React.FC<IJobListProps> = ({jobs}) => {
+const JobList: React.FC<IJobListProps> = (props) => {
   return (
     <ul className='job-list-component'>
-      {jobs.map(job => (
+      {props.jobs.map(job => (
         <Job
           key={job.id}
           job={{...job, fetched: fetched(job.fetched)
