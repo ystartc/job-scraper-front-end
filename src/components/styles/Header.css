@@ -5,30 +5,34 @@
       4fr
     );
   width: fit-content;
+  font-size: 20px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .logo {
   grid-column: 1;
   display: flex;
   flex-direction: column;
-  align-items: left;
   text-align: left;
   justify-content: center;
-  min-height: 3rem;
-  min-width: 3rem;
+  color: aliceblue;
+  cursor: pointer;
+  /* min-height: 3rem;
+  min-width: 3rem; */
+  text-decoration: none;
 }
 
 .find-jobs {
   grid-column: 2;
   display: flex;
   flex-direction: column;
-  align-items: left;
   text-align: left;
   justify-content: center;
   color: aliceblue;
   cursor: pointer;
-  min-height: 3rem;
-  min-width: 3rem;
+  /* min-height: 3rem;
+  min-width: 3rem; */
   text-decoration: none;
 }
 
@@ -36,9 +40,8 @@
   grid-column: 3;
   display: flex;
   flex-direction: column;
-  align-items: right;
   text-align: right;
   justify-content: center;
-  min-height: 3rem;
-  min-width: 3rem;
+  /* min-height: 3rem;
+  min-width: 3rem; */
 }

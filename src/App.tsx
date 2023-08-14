@@ -12,7 +12,7 @@ import {
 import SearchPage from './pages/search';
 import MainPage from './pages/main';
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <section className="App">
       <header className="App-header">
@@ -23,6 +23,7 @@ const App = () => {
           <Route path='/' element={<MainPage/>}/>
           <Route path='/search' element={<SearchPage/>}/>
           <Route path='/' element={<Navigate to='/search' replace/>} />
+          <Route path='/search' element={<Navigate to='/' replace/>} />
         </Routes>
       </main>
       <footer className='App-footer'>

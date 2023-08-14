@@ -18,9 +18,12 @@
   font-size: calc(10px + 2vmin);
   color: white;
   gap: 0.5rem;
+  position: fixed;
+  width: 100%;
 }
 
 .App-main {
+  min-height: 80vh;
   grid-row: 2;
   gap: 0.5rem;
   display: flex;
@@ -42,4 +45,9 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.homepage {
+  background-color: rgb(249, 241, 234);
+  width: 100%;
 }
