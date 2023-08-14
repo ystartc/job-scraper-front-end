@@ -42,6 +42,8 @@
   flex-direction: column;
   text-align: right;
   justify-content: center;
+  color: aliceblue;
+  text-decoration: none;
   /* min-height: 3rem;
   min-width: 3rem; */
 }

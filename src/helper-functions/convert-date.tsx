@@ -14,11 +14,21 @@ export const daysSinceFetch = (fetchDate: string): number  => {
 
   // Convert the difference to days
   const daysDiff = Math.floor(timeDiffMs / (1000 * 60 * 60 * 24));
-  
-  return daysDiff;
-}
 
-// Example usage:
-const fetchDate = "Thu, 10 Aug 2023 00:00:00 GMT";
-const daysSincePosted = daysSinceFetch(fetchDate);
-console.log(`Days since posted: ${daysSincePosted}`);
+  return daysDiff;
+};
+
+export const fetched = (date: string): string => {
+  const number = daysSinceFetch(date)
+  let fetched: string;
+  if (number === 0) {
+    fetched = 'Posted today'
+  }
+  else if (number === 1) {
+    fetched = `Posted ${number} day ago`
+  }
+  else {
+    fetched = `Posted ${number} days ago`
+  }
+  return fetched;
+  };

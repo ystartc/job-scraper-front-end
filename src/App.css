@@ -51,3 +51,27 @@
   background-color: rgb(249, 241, 234);
   width: 100%;
 }
+
+.lost-cat {
+  width: 130%;
+}
+
+.sign-in-page::before {
+  background-image: url('https://media.istockphoto.com/id/164452038/vector/young-red-headed-boy-makes-silly-face-using-tongue-and-hands.jpg?s=612x612&w=0&k=20&c=1suX6Kd-2Gq9sQlXEL16zCDxVn0sutKPHjKWkn89KWw=');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* width: 90%;
+  height: 90%; */
+  margin-top: 100px;
+  margin-left: 700px;
+  width: 400px;
+  height: 500px;
+  position: fixed;
+  content: '';
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
+  /* filter: blur(3px); */
+  z-index: -1;
+}

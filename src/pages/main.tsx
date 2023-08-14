@@ -1,4 +1,4 @@
-const MainPage = () => {
+const MainPage: React.FC  = () => {
   return (
     <section className="homepage">
       <header className="welcome">

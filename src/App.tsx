@@ -4,13 +4,16 @@ import Header from './components/Header';
 import {
   Routes, 
   Route,
-  // Link,
   Navigate
 } from 'react-router-dom';
 
 // pages:
-import SearchPage from './pages/search';
 import MainPage from './pages/main';
+import SearchPage from './pages/search';
+import SearchResultPage from './pages/searchResult';
+import NotFoundPage from './pages/404';
+import { Sign } from 'crypto';
+import SignInPage from './pages/signIn';
 
 const App: React.FC = () => {
   return (
@@ -22,8 +25,13 @@ const App: React.FC = () => {
         <Routes>
           <Route path='/' element={<MainPage/>}/>
           <Route path='/search' element={<SearchPage/>}/>
-          <Route path='/' element={<Navigate to='/search' replace/>} />
+          <Route path='/searchresult' element={<SearchResultPage/>}/>
+          <Route path='/sign-in' element={<SignInPage/>}/>
+          <Route path='404' element={<NotFoundPage/>}/>
+          {/* <Route path='/' element={<Navigate to='/search' replace/>} />
           <Route path='/search' element={<Navigate to='/' replace/>} />
+          <Route path='/search' element={<Navigate to='/searchresult' replace/>} /> */}
+          <Route path='*' element={<Navigate to='/404' replace/>} />
         </Routes>
       </main>
       <footer className='App-footer'>

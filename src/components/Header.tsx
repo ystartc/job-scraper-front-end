@@ -6,7 +6,7 @@ const Header: React.FC = () => {
     <section className='header'>
       <p className='logo'><Link className='logo'to='/'>Logo</Link></p>
       <Link className='find-jobs' to='/search'>Find jobs</Link>
-      <p className='sign-in'>Sign In</p>
+      <p className='sign-in'><Link className='sign-in'to='/sign-in'>Sign In</Link></p>
     </section>
   )
 }

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './styles/SearchForm.css'
 
 const defaultInput = {
@@ -9,13 +10,20 @@ const defaultInput = {
 const SearchForm: React.FC = () => {
   const [input, setInput] = useState(defaultInput);
 
-const handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
-  setInput({...input, [event.target.name]: event.target.value})
-};
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
+    setInput({...input, [event.target.name]: event.target.value})
+  };
 
-const handleClick = (): void => {
-  // send search request to db and process tehr response to fit output format
-};
+  const navigate = useNavigate();
+
+  const routeChange = (): void => { 
+    navigate('/searchResult');
+  };
+
+  const handleClick = (): void => {
+    // send search request to db and process tehr response to fit output format
+    routeChange();
+  };
 
   return (
     <section className='search-container'>
