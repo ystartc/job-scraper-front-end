@@ -94,3 +94,21 @@
   /* filter: blur(3px); */
   z-index: -1;
 }
+
+.search-page .title-search {
+  font-size: 30px;
+  margin: 30px;
+  padding: 30px;
+}
+
+.search-container {
+  margin: 50px;
+}
+
+.project-warning {
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 25%;
+  padding-top: 5%;
+  margin: 30px;
+}
