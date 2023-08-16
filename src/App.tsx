@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
 import {
   Routes, 
   Route,
@@ -12,8 +11,9 @@ import MainPage from './pages/main';
 import SearchPage from './pages/search';
 import SearchResultPage from './pages/searchResult';
 import NotFoundPage from './pages/404';
-import { Sign } from 'crypto';
 import SignInPage from './pages/signIn';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
@@ -32,7 +32,7 @@ const App: React.FC = () => {
         </Routes>
       </main>
       <footer className='App-footer'>
-        <p>Footer</p>
+        <Footer/>
       </footer>
     </section>
   );

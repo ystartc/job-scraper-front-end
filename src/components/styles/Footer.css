@@ -1,0 +1,36 @@
+.footer {
+  display: grid;
+  grid-template-columns: minmax(min-content, 4fr) minmax(min-content, 1fr) minmax(
+      min-content,
+      1fr
+    );
+  width: fit-content;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.project-owner,
+.linkdin-link,
+.github-link {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  color: aliceblue;
+  cursor: pointer;
+  /* min-height: 3rem;
+  min-width: 3rem; */
+  text-decoration: none;
+}
+
+.project-owner {
+  grid-column: 1;
+}
+
+.linkdin-link {
+  grid-column: 2;
+}
+
+.github-link {
+  grid-column: 3;
+}
