@@ -1,9 +1,10 @@
 import Job from './Job';
-import { IJob, IJobListProps} from '../interfaces/interface';
+import { IJobListProps } from '../interfaces/interface';
 import { fetched } from '../helper-functions/convert-date';
 
 
 const JobList: React.FC<IJobListProps> = (props) => {
+
   return (
     <ul className='job-list-component'>
       {props.jobs.map(job => (

@@ -5,12 +5,10 @@ export const daysSinceFetch = (fetchDate: string): number  => {
   // Get the current date
   const currentDate = new Date();
 
-  // Set both dates to the same time, but keep the date part
-  fetchDateObj.setHours(0, 0, 0, 0);
-  currentDate.setHours(0, 0, 0, 0);
-
   // Calculate the difference in milliseconds between the two dates
   const timeDiffMs = currentDate.getTime() - fetchDateObj.getTime();
+  console.log("curr", currentDate);
+  console.log("fetc", fetchDateObj);
 
   // Convert the difference to days
   const daysDiff = Math.floor(timeDiffMs / (1000 * 60 * 60 * 24));
