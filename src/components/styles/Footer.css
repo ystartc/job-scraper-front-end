@@ -7,6 +7,7 @@
   width: fit-content;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  gap: 3rem;
 }
 
 .project-owner,
@@ -21,16 +22,73 @@
   /* min-height: 3rem;
   min-width: 3rem; */
   text-decoration: none;
+  margin: 0;
 }
 
 .project-owner {
   grid-column: 1;
+  cursor: unset;
+  margin-top: 6px;
 }
 
 .linkdin-link {
   grid-column: 2;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+}
+
+.linkedin-icon {
+  grid-column: 2;
+  display: flex;
+  width: 100px;
+  max-height: 60px;
+  /* object-fit: cover; */
+  text-align: left;
+  justify-content: center;
+  margin-top: 13px;
+  transition: 0.5s;
+}
+
+.linkedin-icon:hover {
+  opacity: 0.8;
+}
+
+.github-container {
+  display: grid;
+  grid-template-columns: minmax(min-content, 4fr) minmax(min-content, 1fr) minmax(
+      min-content,
+      1fr
+    );
+  width: 50px;
+  height: 50px;
 }
 
 .github-link {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
   grid-column: 3;
+  text-align: right;
+  justify-content: center;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.github-icon {
+  max-width: 30px;
+  max-height: 30px;
+  overflow: hidden;
+  border-radius: 4px;
+  margin: 0;
+  object-fit: cover;
+  margin-right: 5px;
+  margin-top: 7px;
+}
+
+.github {
+  display: flex;
+  font-family: Roboto-Regular, Helvetica Neue, Arial, sans-serif;
+  justify-content: end;
+  margin-top: 15px;
 }

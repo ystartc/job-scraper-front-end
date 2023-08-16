@@ -51,7 +51,8 @@
 .location-icon {
   top: 50%;
   right: 10px;
-  width: 3%;
+  width: 5%;
+  margin-bottom: 3px;
 }
 
 .search-button {

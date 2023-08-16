@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import usePagination from '@mui/material/usePagination';
 // import SearchResult from '../components/SearchResult';
 import JobList from '../components/JobList';
 import '../components/styles/SearchResult.css'
