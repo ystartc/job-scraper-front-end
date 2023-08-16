@@ -5,6 +5,7 @@ import JobList from '../components/JobList';
 import '../components/styles/SearchResult.css'
 import * as api from '../api/apiRequests';
 import { IJob } from '../interfaces/interface';
+import SearchForm from '../components/SearchForm';
 
 
 const SearchResultPage: React.FC = () => {
@@ -35,6 +36,7 @@ const SearchResultPage: React.FC = () => {
 
   return (
     <section className='search-result-page'>
+      <SearchForm/>
       <p className='title-search'>Found jobs:</p>
       <section>
         <JobList jobs={jobData}/>
