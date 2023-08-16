@@ -1,21 +1,7 @@
 import Job from './Job';
+import { IJob, IJobListProps} from '../interfaces/interface';
 import { fetched } from '../helper-functions/convert-date';
 
-interface IJob {
-  id: number
-  jobId: string
-  dataId: number
-  title: string
-  location: string
-  company: string
-  salary?: string | undefined
-  about: string
-  fetched: string
-};
-
-interface IJobListProps {
-  jobs: IJob[];
-};
 
 const JobList: React.FC<IJobListProps> = (props) => {
   return (

@@ -28,9 +28,6 @@ const App: React.FC = () => {
           <Route path='/searchresult' element={<SearchResultPage/>}/>
           <Route path='/sign-in' element={<SignInPage/>}/>
           <Route path='404' element={<NotFoundPage/>}/>
-          {/* <Route path='/' element={<Navigate to='/search' replace/>} />
-          <Route path='/search' element={<Navigate to='/' replace/>} />
-          <Route path='/search' element={<Navigate to='/searchresult' replace/>} /> */}
           <Route path='*' element={<Navigate to='/404' replace/>} />
         </Routes>
       </main>

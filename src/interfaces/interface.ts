@@ -9,3 +9,17 @@ export interface IJob {
   about: string
   fetched: string
 };
+
+export interface IProps {
+  job: IJob;
+};
+
+export interface IJobListProps {
+  jobs: IJob[];
+};
+
+export interface Input {
+  job: string;
+  company: string;
+  location: string;
+};

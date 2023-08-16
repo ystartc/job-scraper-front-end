@@ -15,11 +15,15 @@
   border-radius: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
-  min-width: 80%;
-  min-height: 90%;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  /* min-width: 80%;
+  min-height: 90%; */
 }
 
-.query-input-container,
+.job-input-container,
+.company-input-container,
 .location-input-container {
   margin-bottom: 30px;
   margin-top: 30px;
@@ -32,18 +36,24 @@
   min-width: 3rem;
 }
 
-.search-icon {
-  top: 50%;
-  right: 10px;
-  width: 3%;
+.company-input-container {
+  min-height: 5rem;
+  min-width: 10rem;
 }
 
 .search-icon,
+.company-icon {
+  top: 50%;
+  right: 10px;
+  width: 10%;
+}
+
 .location-icon {
   top: 50%;
   right: 10px;
   width: 3%;
 }
+
 .search-button {
   font-size: 15px;
   padding-top: 5px;
@@ -70,8 +80,9 @@
   z-index: -1;
 }
 
-.query-input,
-.location-input {
+.job-input,
+.location-input,
+.company-input {
   border-radius: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
