@@ -5,19 +5,25 @@
       4fr
     );
   width: fit-content;
+  font-family: Poppins, Helvetica Neue, Arial, sans-serif;
+  font-weight: bold;
 }
 
-.logo {
+.logo,
+.logo-icon {
   grid-column: 1;
   display: flex;
   flex-direction: column;
   text-align: left;
   justify-content: center;
-  color: aliceblue;
+  /* color: aliceblue; */
   cursor: pointer;
   /* min-height: 3rem;
   min-width: 3rem; */
   text-decoration: none;
+  padding-top: 10px;
+  width: 100%;
+  transition: opacity 0.5s;
 }
 
 .find-jobs {
@@ -26,11 +32,14 @@
   flex-direction: column;
   text-align: left;
   justify-content: center;
-  color: aliceblue;
+  color: rgb(70, 70, 70);
+  text-shadow: 1px 1px 1px rgb(145, 146, 146);
   cursor: pointer;
   /* min-height: 3rem;
   min-width: 3rem; */
   text-decoration: none;
+  transition: color 0.5s;
+  margin-left: 3rem;
 }
 
 .sign-in {
@@ -39,8 +48,20 @@
   flex-direction: column;
   text-align: right;
   justify-content: center;
-  color: aliceblue;
+  color: rgb(70, 70, 70);
+  text-shadow: 1px 1px 1px rgb(145, 146, 146);
   text-decoration: none;
+  margin-right: 3rem;
   /* min-height: 3rem;
   min-width: 3rem; */
+  transition: color 0.5s;
+}
+
+.logo-icon:hover {
+  opacity: 0.5;
+}
+
+.find-jobs:hover,
+.sign-in:hover {
+  color: rgb(186, 183, 191);
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate , useLocation } from 'react-router-dom';
+// import { createMemoryHistory } from 'history';
 import { Input } from '../interfaces/interface';
 import './styles/SearchForm.css'
 
@@ -11,6 +12,8 @@ const defaultInput = {
 
 const SearchForm: React.FC = () => {
   const [input, setInput] = useState<Input>(defaultInput);
+  const location = useLocation();
+  // const history = createMemoryHistory();
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
     setInput({...input, [event.target.name]: event.target.value})
@@ -22,7 +25,12 @@ const SearchForm: React.FC = () => {
     if (!query) {
       query = 'title=software'
     };
-    navigate(`/searchResult?${query}`);
+
+    if (location.pathname === '/searchResult') {navigate(`${location.pathname}?${query}`)
+    window.location.reload();}
+  // history.replace(`/searchResult?${query}`)}
+    
+    else {navigate(`/searchResult?${query}`)}
   };
 
   const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>): void => {
@@ -110,6 +118,7 @@ const SearchForm: React.FC = () => {
           <option value='3'>Last 3 days</option>
           <option value='7'>Last 7 days</option>
           <option value='14'>Last 14 days</option>
+          <option value=''>Select All</option>
         </select>
       </section>
       <button 

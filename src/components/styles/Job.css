@@ -13,8 +13,12 @@
 }
 
 .job-container:hover {
-  background-color: rgba(245, 239, 241, 0.37);
+  background-color: rgba(245, 239, 241, 0.588);
   cursor: pointer;
+}
+
+.job-container a:visited {
+  color: rgb(137, 179, 182);
 }
 
 .job-container h2 {

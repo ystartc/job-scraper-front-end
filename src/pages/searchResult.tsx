@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import usePagination from '@mui/material/usePagination';
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 // import SearchResult from '../components/SearchResult';
 import JobList from '../components/JobList';
 import '../components/styles/SearchResult.css'
@@ -10,7 +11,7 @@ import SearchForm from '../components/SearchForm';
 
 const SearchResultPage: React.FC = () => {
   const [jobData, setJobData] = useState<IJob[]>([]);
-
+  
   let query = document.location.search;
 
   const loadJobsByQueryRequest = (query: string) => {
@@ -32,7 +33,7 @@ const SearchResultPage: React.FC = () => {
 
   useEffect(() => {
     loadJobsByQueryRequest(query);
-  }, []);
+  }, [query]);
 
   return (
     <section className='search-result-page'>

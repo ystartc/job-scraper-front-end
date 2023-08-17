@@ -17,7 +17,8 @@
   flex-direction: column;
   text-align: left;
   justify-content: center;
-  color: aliceblue;
+  color: rgb(70, 70, 70);
+  text-shadow: 1px 1px 1px rgb(145, 146, 146);
   cursor: pointer;
   /* min-height: 3rem;
   min-width: 3rem; */
@@ -29,6 +30,9 @@
   grid-column: 1;
   cursor: unset;
   margin-top: 6px;
+  margin-left: 3rem;
+  font-family: Poppins, Helvetica Neue, Arial, sans-serif;
+  font-weight: bold;
 }
 
 .linkdin-link {
@@ -48,6 +52,7 @@
   justify-content: center;
   margin-top: 13px;
   transition: 0.5s;
+  margin-left: 5rem;
 }
 
 .linkedin-icon:hover {
@@ -71,7 +76,8 @@
   grid-column: 3;
   text-align: right;
   justify-content: center;
-  color: aliceblue;
+  color: rgb(216, 215, 215);
+  text-shadow: 1px 1px 1px rgb(158, 158, 159);
   cursor: pointer;
 }
 
@@ -80,10 +86,11 @@
   max-height: 30px;
   overflow: hidden;
   border-radius: 4px;
-  margin: 0;
+  margin-bottom: 0;
   object-fit: cover;
   margin-right: 5px;
   margin-top: 7px;
+  margin-left: 3rem;
 }
 
 .github {
@@ -91,4 +98,5 @@
   font-family: Roboto-Regular, Helvetica Neue, Arial, sans-serif;
   justify-content: end;
   margin-top: 15px;
+  /* margin-left: 5rem; */
 }

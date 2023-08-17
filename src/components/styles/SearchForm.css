@@ -15,11 +15,8 @@
   border-radius: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
-  /* margin-bottom: 5rem; */
   margin-left: 5rem;
   margin-right: 5rem;
-  /* min-width: 80%;
-  min-height: 90%; */
 }
 
 .job-input-container,
@@ -51,8 +48,9 @@
 .location-icon {
   top: 50%;
   right: 10px;
-  width: 5%;
+  width: 6%;
   margin-bottom: 3px;
+  margin-top: 3px;
 }
 
 .dropdown-container {
@@ -70,6 +68,26 @@
   min-height: 20%;
   cursor: pointer;
   margin-top: 0;
+  font-family: Poppins, Helvetica Neue, Arial, sans-serif;
+}
+
+.posted-ago:hover {
+  background-color: rgba(250, 248, 249, 0.594);
+  cursor: pointer;
+}
+
+option {
+  font-size: 15px;
+  color: rgba(77, 76, 76, 0.5);
+  font-family: Poppins, Helvetica Neue, Arial, sans-serif;
+  user-select: none;
+}
+
+option:hover {
+  font-size: 15px;
+  color: rgba(77, 76, 76, 0.5);
+  font-family: Poppins, Helvetica Neue, Arial, sans-serif;
+  user-select: none;
 }
 
 .search-button {
@@ -80,6 +98,10 @@
   min-width: 20%;
   min-height: 30%;
   cursor: pointer;
+  font-family: Poppins, Helvetica Neue, Arial, sans-serif;
+  color: rgb(43, 42, 42);
+  text-shadow: 0.5px 0.5px 0.5px rgb(145, 146, 146);
+  font-size: 15px;
 }
 
 .search-container::before {
@@ -106,4 +128,7 @@
   padding-bottom: 5px;
   min-width: 30%;
   min-height: 30%;
+  font-family: Poppins, Helvetica Neue, Arial, sans-serif;
+  color: rgb(43, 42, 42);
+  text-shadow: 0.5px 0.5px 0.5px rgb(145, 146, 146);
 }
