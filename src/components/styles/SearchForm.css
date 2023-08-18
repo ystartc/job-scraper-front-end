@@ -99,7 +99,7 @@ option:hover {
   min-height: 30%;
   cursor: pointer;
   font-family: Poppins, Helvetica Neue, Arial, sans-serif;
-  color: rgb(43, 42, 42);
+  color: rgba(69, 69, 69, 0.5);
   text-shadow: 0.5px 0.5px 0.5px rgb(145, 146, 146);
   font-size: 15px;
 }
