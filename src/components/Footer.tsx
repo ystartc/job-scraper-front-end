@@ -4,7 +4,7 @@ const Footer: React.FC = () => {
   return (
     <section className='footer'>
       <p className='project-owner'>©Ystartc</p>
-      <a className='linkedin-link' href='www.linkedin.com/in/ystartc'>
+      <a className='linkedin-link' href='https://linkedin.com/in/ystartc'>
         <img className='linkedin-icon' alt='linkedin icon' src='https://www.edigitalagency.com.au/wp-content/uploads/Linkedin-logo-png.png'/>
       </a>
       {/* <p className='linkdin-link'><a href='www.linkedin.com/in/ystartc'>LinkdIn</a></p> */}
