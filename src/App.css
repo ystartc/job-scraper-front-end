@@ -1,36 +1,32 @@
 .App {
-  display: grid;
-  grid-template-rows: minmax(min-content, 0.5fr) minmax(min-content, 4fr) minmax(
-      min-content,
-      0.5fr
-    );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   text-align: center;
   gap: 3rem;
 }
 
-.App-header {
-  grid-row: 1;
+.header {
   background-color: #9ba5b6;
   opacity: 0.7;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(20px + 1vmin);
   color: white;
   gap: 0.5rem;
-  position: absolute;
   width: 100%;
-  height: 15%;
+  height: 100px;
   top: 0;
-  z-index: 1;
+  font-family: Poppins, Helvetica Neue, Arial, sans-serif;
+  font-weight: bold;
 }
 
 .App-main {
   min-height: 80vh;
-  grid-row: 2;
   gap: 0.5rem;
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -38,10 +34,10 @@
   color: rgb(43, 42, 42);
   text-shadow: 0.5px 0.5px 0.5px rgb(145, 146, 146);
   overflow-y: auto;
+  margin-top: 0;
 }
 
 .App-footer {
-  grid-row: 3;
   background-color: #9ba5b6;
   opacity: 0.7;
   display: flex;
@@ -51,6 +47,8 @@
   font-size: calc(15px + 1vmin);
   gap: 0.5rem;
   color: white;
+  width: 100%;
+  height: 90px;
 }
 
 .App-link {
@@ -81,18 +79,21 @@
 }
 
 .lost-cat {
-  width: 130%;
+  width: 30%;
   font-family: Poppins, Helvetica Neue, Arial, sans-serif;
   color: rgb(43, 42, 42);
   text-shadow: 0.5px 0.5px 0.5px rgb(145, 146, 146);
+}
+
+.sign-in-page {
+  margin-top: 15rem;
+  margin-bottom: 25rem;
 }
 
 .sign-in-page::before {
   background-image: url('https://media.istockphoto.com/id/164452038/vector/young-red-headed-boy-makes-silly-face-using-tongue-and-hands.jpg?s=612x612&w=0&k=20&c=1suX6Kd-2Gq9sQlXEL16zCDxVn0sutKPHjKWkn89KWw=');
   background-repeat: no-repeat;
   background-size: cover;
-  /* width: 90%;
-  height: 90%; */
   margin-top: 100px;
   margin-left: 700px;
   width: 400px;
@@ -103,18 +104,13 @@
   left: 0px;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0.5;
-  /* filter: blur(3px); */
   z-index: -1;
 }
 
-.search-page .title-search {
+.title-search {
   font-size: 30px;
   margin: 30px;
   padding: 30px;
-}
-
-.search-container {
-  margin: 50px;
 }
 
 .project-warning {

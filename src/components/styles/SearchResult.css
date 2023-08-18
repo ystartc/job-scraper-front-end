@@ -1,15 +1,12 @@
-.search-result-page::before {
-  background-image: url('https://media.istockphoto.com/id/1279104620/photo/top-view-of-a-white-desktop-concept-job-search.jpg?s=612x612&w=0&k=20&c=Ow_kvA2wQ4rLlqX_oFHgpjLb1JMKyPQKLOPzbu6w6qw=');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  content: '';
-  top: 0px;
-  left: 0px;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0.5;
-  filter: blur(3px);
-  z-index: -1;
+.search-result-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-container {
+  margin-bottom: 0;
+}
+
+.job-list-component {
+  margin: 0;
 }

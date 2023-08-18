@@ -37,11 +37,15 @@ const SearchResultPage: React.FC = () => {
 
   return (
     <section className='search-result-page'>
-      <SearchForm/>
+      
+
+          <SearchForm/>
       <p className='title-search'>Found jobs:</p>
+
       <section>
         <JobList jobs={jobData}/>
       </section>
+
     </section>
   )
 }
