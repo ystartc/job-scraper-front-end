@@ -23,7 +23,7 @@ const SearchForm: React.FC = () => {
 
   const routeChange = (query: string): void => { 
     if (!query) {
-      query = 'title=software&days_ago=14'
+      query = 'title=software'
     };
 
     if (location.pathname === '/searchResult') {navigate(`${location.pathname}?${query}`)
