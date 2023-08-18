@@ -5,11 +5,13 @@
       0.5fr
     );
   text-align: center;
+  gap: 3rem;
 }
 
 .App-header {
   grid-row: 1;
-  background-color: #7f8a9f;
+  background-color: #9ba5b6;
+  opacity: 0.7;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,9 +19,11 @@
   font-size: calc(20px + 1vmin);
   color: white;
   gap: 0.5rem;
-  position: fixed;
+  position: absolute;
   width: 100%;
-  height: 10%;
+  height: 15%;
+  top: 0;
+  z-index: 1;
 }
 
 .App-main {
@@ -33,12 +37,13 @@
   font-family: Poppins, Helvetica Neue, Arial, sans-serif;
   color: rgb(43, 42, 42);
   text-shadow: 0.5px 0.5px 0.5px rgb(145, 146, 146);
+  overflow-y: auto;
 }
 
 .App-footer {
   grid-row: 3;
-  background-color: #7f8a9f;
-  opacity: 0.9;
+  background-color: #9ba5b6;
+  opacity: 0.7;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,7 +58,6 @@
 }
 
 .homepage {
-  /* background-color: rgb(249, 241, 234); */
   width: 100%;
 }
 .welcome {
